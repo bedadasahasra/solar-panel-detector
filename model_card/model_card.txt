@@ -1,0 +1,25 @@
+MODEL CARD – Solar PV Detection Prototype
+
+Model: YOLOv8 (Ultralytics)
+
+Purpose:
+- Detect presence of rooftop solar panels
+- Provide binary classification (present/not present)
+
+Data Used:
+- Roboflow rooftop solar datasets
+- Google satellite imagery samples
+
+Assumptions:
+- Input image contains a rooftop
+- Reasonable resolution for PV module visibility
+
+Limitations:
+- Shadows, clouds, water tanks may cause false negatives
+- Angle distortion not fully corrected
+- Area estimation is approximate (for prototype)
+
+Recommended Improvements:
+- Train model on larger India-specific dataset
+- Add shadow-augmented samples
+- Improve bounding box → area conversion logic

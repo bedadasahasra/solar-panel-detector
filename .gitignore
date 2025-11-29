@@ -1,0 +1,7 @@
+﻿# Ignore large model files and outputs
+*.pt
+model/
+models/
+predictions/
+artifacts/
+logs/
